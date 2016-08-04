@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#05668D</color>
-    <color name="colorPrimaryDark">#05668D</color>
-    <color name="colorAccent">#05668D</color>
-    <color name="riverColor">#71b7fe</color>
-    <color name="sectorColor">#cde6fe</color>
-    <color name="textColor">#4c5469</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#02635a</color>
+    <color name="colorAccent">#3cd9ca</color>
+    <color name="item_pressed">#e0e9f9</color>
+    <color name="light_gray">#eeeef3</color>
     <color name="white">#FFFFFF</color>
+    <color name="gray">#99999e</color>
+    <color name="dark_gray">#323232</color>
+    <color name="blue">#355398</color>
+    <color name="light_blue">#83a1d6</color>
 </resources>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/toolbarMap"
+    android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:background="@color/colorPrimary">
+    android:layout_height="150dp"
+    android:background="@drawable/img_toolbar">
 
     <TextView
         android:id="@+id/txv_title"
@@ -15,6 +15,7 @@
         android:layout_gravity="center"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:text="SEHINAV"/>
+        android:gravity="center"
+        android:text="Histogramas de niveles \nde los ríos de la Amazonía"/>
 
 </android.support.v7.widget.Toolbar>

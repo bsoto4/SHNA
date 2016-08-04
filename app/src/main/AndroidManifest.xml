@@ -21,6 +21,13 @@
 
         </activity>
 
+        <activity
+            android:name=".activity.AboutActivity"
+            android:label="Acerca de"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
     </application>
 
 </manifest>
