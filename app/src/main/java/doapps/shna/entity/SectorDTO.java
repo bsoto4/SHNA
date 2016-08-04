@@ -1,4 +1,4 @@
-package doapps.shna.model;
+package doapps.shna.entity;
 
 /**
  * Created by Bryam Soto on 03/08/2016.

@@ -1,6 +1,5 @@
 package doapps.shna.adapter;
 
-import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.TextView;
@@ -8,9 +7,7 @@ import android.widget.TextView;
 import com.zaihuishou.expandablerecycleradapter.viewholder.AbstractAdapterItem;
 
 import doapps.shna.R;
-import doapps.shna.activity.AboutActivity;
-import doapps.shna.activity.SelectionActivity;
-import doapps.shna.model.SectorDTO;
+import doapps.shna.entity.SectorDTO;
 
 
 /**
@@ -34,8 +31,8 @@ public class SectorAdapter extends AbstractAdapterItem {
             public void onClick(View view) {
                 Snackbar.make(view, sectorDTO.getName(), Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                Intent intent = new Intent(view.getContext(), AboutActivity.class);
-                view.getContext().startActivity(intent);
+                /*Intent intent = new Intent(view.getContext(), AboutActivity.class);
+                view.getContext().startActivity(intent);*/
             }
         });
     }

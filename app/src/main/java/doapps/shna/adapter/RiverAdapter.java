@@ -1,7 +1,6 @@
 package doapps.shna.adapter;
 
 import android.animation.ObjectAnimator;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -9,7 +8,7 @@ import android.widget.TextView;
 import com.zaihuishou.expandablerecycleradapter.viewholder.AbstractExpandableAdapterItem;
 
 import doapps.shna.R;
-import doapps.shna.model.RiverDTO;
+import doapps.shna.entity.RiverDTO;
 
 
 /**

@@ -1,10 +1,13 @@
 package doapps.shna.activity;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.zaihuishou.expandablerecycleradapter.adapter.BaseExpandableAdapter;
 import com.zaihuishou.expandablerecycleradapter.viewholder.AbstractAdapterItem;
@@ -15,8 +18,8 @@ import java.util.List;
 import doapps.shna.R;
 import doapps.shna.adapter.RiverAdapter;
 import doapps.shna.adapter.SectorAdapter;
-import doapps.shna.model.RiverDTO;
-import doapps.shna.model.SectorDTO;
+import doapps.shna.entity.RiverDTO;
+import doapps.shna.entity.SectorDTO;
 
 public class SelectionActivity extends AppCompatActivity {
 
@@ -26,12 +29,16 @@ public class SelectionActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private BaseExpandableAdapter baseExpandableAdapter;
     private List<RiverDTO> riverList;
+    private ImageView icInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selection);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        icInfo = (ImageView) findViewById(R.id.ic_info);
+
+
         initData();
         baseExpandableAdapter = new BaseExpandableAdapter(riverList) {
             @NonNull
@@ -77,6 +84,15 @@ public class SelectionActivity extends AppCompatActivity {
             @Override
             public void onListItemCollapsed(int position) {
 
+            }
+        });
+
+
+        icInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), AboutActivity.class);
+                view.getContext().startActivity(intent);
             }
         });
     }

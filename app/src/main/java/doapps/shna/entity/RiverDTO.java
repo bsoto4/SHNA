@@ -1,4 +1,4 @@
-package doapps.shna.model;
+package doapps.shna.entity;
 
 import com.zaihuishou.expandablerecycleradapter.model.ExpandableListItem;
 
